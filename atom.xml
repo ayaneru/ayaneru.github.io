@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[ご注文は何ですか?]]></title>
+  <link href="http://ayaneru.github.io/atom.xml" rel="self"/>
+  <link href="http://ayaneru.github.io/"/>
+  <updated>2015-02-12T17:28:17+09:00</updated>
+  <id>http://ayaneru.github.io/</id>
+  <author>
+    <name><![CDATA[Mikami Yuki]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
