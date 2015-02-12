@@ -4,7 +4,7 @@
   <title><![CDATA[ご注文は何ですか?]]></title>
   <link href="http://ayaneru.github.io/atom.xml" rel="self"/>
   <link href="http://ayaneru.github.io/"/>
-  <updated>2015-02-12T18:20:14+09:00</updated>
+  <updated>2015-02-12T18:54:22+09:00</updated>
   <id>http://ayaneru.github.io/</id>
   <author>
     <name><![CDATA[Mikami Yuki]]></name>
@@ -24,6 +24,10 @@
 
 <h3>作成</h3>
 
+<p><em>[1]Octopressを用いてローカル上にブログ設置</em></p>
+
+<hr />
+
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -38,6 +42,62 @@
 
 
 <p></p>
+
+<p><em>[2]username+github.io を用いてGitHubPagesを作成</em></p>
+
+<hr />
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>rake setup_github_pages <span class="c">#gitのSSHキー入力  </span>
+</span><span class='line'><span class="nv">$ </span>rake generate <span class="c">#staticサイト作成  </span>
+</span><span class='line'><span class="nv">$ </span>rake deploy <span class="c">#GitHubにcommitされる.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><em>[3]ブログの設定/投稿/OctopressのTheme変更</em></p>
+
+<hr />
+
+<p>[設定]</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>vim _config.yml <span class="c">#各自弄ってください.  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+[投稿]</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake new_post<span class="o">[</span><span class="s1">&#39;記事のナンバー(英語)&#39;</span><span class="o">]</span>  <span class="c"># 記事のタイトルは記事書くときに日本語タイトルに変更可  </span>
+</span><span class='line'><span class="nv">$ </span>rake gen_deploy <span class="c">#rake generate , rake deploy  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+[Theme変更]</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>git clone themeの保存されているssh .themes/テーマ名
+</span><span class='line'><span class="nv">$ </span>rake install<span class="o">[</span><span class="s1">&#39;テーマ名&#39;</span><span class="o">]</span>
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><em>[4]参考/引用ページ</em><br/>
+・<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes," title="3rd Party Octopress Themes">3rd Party Octopress Themes</a><br/>
+・<a href="http://qiita.com/syui/items/07365ed24eef63602233," title="GitHub Pages + Octopress カスタマイズ">GitHub Pages + Octopress カスタマイズ</a><br/>
+・<a href="http://www.slideshare.net/yizawa/octopress," title="Octopress簡単スタートガイドWorking at 株式会社クルウィット">Octopress簡単スタートガイド</a><br/>
+・<a href="http://rcmdnk.github.io/blog/2013/03/07/setup-octopress/," title="GitHub pages + Octopressの導入">GitHub pages + Octopressの導入</a></p>
 ]]></content>
   </entry>
   

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Memo | ご注文は何ですか?]]></title>
   <link href="http://ayaneru.github.io/blog/categories/memo/atom.xml" rel="self"/>
   <link href="http://ayaneru.github.io/"/>
-  <updated>2015-02-12T18:20:14+09:00</updated>
+  <updated>2015-02-12T18:54:22+09:00</updated>
   <id>http://ayaneru.github.io/</id>
   <author>
     <name><![CDATA[Mikami Yuki]]></name>
@@ -24,12 +24,51 @@
 
 <h3>作成</h3>
 
+<p><em>[1]Octopressを用いてローカル上にブログ設置</em></p>
+
+<hr />
+
 <pre><code class="Bash  ">$ git clone git://github.com/imathis/octopress.git octopress  
 $ bundle install —-path vendor/bundle  
 $ rake install  
 $ rake generate #staticサイト作成  
 $ rake preview #ローカル確認　localhost:4000  
 </code></pre>
+
+<p><em>[2]username+github.io を用いてGitHubPagesを作成</em></p>
+
+<hr />
+
+<pre><code class="Bash  ">$ rake setup_github_pages #gitのSSHキー入力  
+$ rake generate #staticサイト作成  
+$ rake deploy #GitHubにcommitされる.
+</code></pre>
+
+<p><em>[3]ブログの設定/投稿/OctopressのTheme変更</em></p>
+
+<hr />
+
+<p>[設定]<br/>
+<code>
+$ vim _config.yml #各自弄ってください.  
+</code><br/>
+[投稿]<br/>
+<code>  
+$ bundle exec rake new_post['記事のナンバー(英語)']  # 記事のタイトルは記事書くときに日本語タイトルに変更可  
+$ rake gen_deploy #rake generate , rake deploy  
+</code><br/>
+[Theme変更]<br/>
+<code>  
+$ git clone themeの保存されているssh .themes/テーマ名  
+$ rake install['テーマ名']  
+$ rake generate  
+</code></p>
+
+<p><em>[4]参考/引用ページ</em><br/>
+・<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes," title="3rd Party Octopress Themes">3rd Party Octopress Themes</a><br/>
+・<a href="http://qiita.com/syui/items/07365ed24eef63602233," title="GitHub Pages + Octopress カスタマイズ">GitHub Pages + Octopress カスタマイズ</a><br/>
+・<a href="http://www.slideshare.net/yizawa/octopress," title="Octopress簡単スタートガイドWorking at 株式会社クルウィット">Octopress簡単スタートガイド</a><br/>
+・<a href="http://rcmdnk.github.io/blog/2013/03/07/setup-octopress/," title="GitHub pages + Octopressの導入">GitHub pages + Octopressの導入</a></p>
 ]]></content>
   </entry>
   

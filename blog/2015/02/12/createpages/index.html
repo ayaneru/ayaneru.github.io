@@ -9,14 +9,13 @@
   <meta name="author" content="Mikami Yuki">
 
   
-  <meta name="description" content="経緯 Github.io ってかっこよくね? 作成 1
+  <meta name="description" content="経緯 Github.io ってかっこよくね? 作成 [1]Octopressを用いてローカル上にブログ設置 1
 2
 3
 4
 5
 $ git clone git://github.com/imathis/octopress.git octopress
-$ bundle install —-path vendor/bundle
-$ rake install &hellip;">
+$ bundle install —-path &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -128,6 +127,10 @@ $ rake install &hellip;">
 
 <h3>作成</h3>
 
+<p><em>[1]Octopressを用いてローカル上にブログ設置</em></p>
+
+<hr />
+
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
@@ -142,6 +145,62 @@ $ rake install &hellip;">
 
 
 <p></p>
+
+<p><em>[2]username+github.io を用いてGitHubPagesを作成</em></p>
+
+<hr />
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>rake setup_github_pages <span class="c">#gitのSSHキー入力  </span>
+</span><span class='line'><span class="nv">$ </span>rake generate <span class="c">#staticサイト作成  </span>
+</span><span class='line'><span class="nv">$ </span>rake deploy <span class="c">#GitHubにcommitされる.</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><em>[3]ブログの設定/投稿/OctopressのTheme変更</em></p>
+
+<hr />
+
+<p>[設定]</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>vim _config.yml <span class="c">#各自弄ってください.  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+[投稿]</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake new_post<span class="o">[</span><span class="s1">&#39;記事のナンバー(英語)&#39;</span><span class="o">]</span>  <span class="c"># 記事のタイトルは記事書くときに日本語タイトルに変更可  </span>
+</span><span class='line'><span class="nv">$ </span>rake gen_deploy <span class="c">#rake generate , rake deploy  </span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>
+[Theme変更]</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>git clone themeの保存されているssh .themes/テーマ名
+</span><span class='line'><span class="nv">$ </span>rake install<span class="o">[</span><span class="s1">&#39;テーマ名&#39;</span><span class="o">]</span>
+</span><span class='line'><span class="nv">$ </span>rake generate
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p></p>
+
+<p><em>[4]参考/引用ページ</em><br/>
+・<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes," title="3rd Party Octopress Themes">3rd Party Octopress Themes</a><br/>
+・<a href="http://qiita.com/syui/items/07365ed24eef63602233," title="GitHub Pages + Octopress カスタマイズ">GitHub Pages + Octopress カスタマイズ</a><br/>
+・<a href="http://www.slideshare.net/yizawa/octopress," title="Octopress簡単スタートガイドWorking at 株式会社クルウィット">Octopress簡単スタートガイド</a><br/>
+・<a href="http://rcmdnk.github.io/blog/2013/03/07/setup-octopress/," title="GitHub pages + Octopressの導入">GitHub pages + Octopressの導入</a></p>
 </div>
 
 
