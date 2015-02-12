@@ -14,9 +14,9 @@
 3
 4
 5
-#include&lt;stdio.h&gt;
-int main(void){ printf(&quot;Hello,World\n&quot;); return 0;
-} ">
+$ git clone git://github.com/imathis/octopress.git octopress
+$ bundle install —-path vendor/bundle
+$ rake install &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -91,22 +91,22 @@ int main(void){ printf(&quot;Hello,World\n&quot;); return 0;
   </header>
 
 
-<div class="entry-content"><h2>経緯</h2>
+<div class="entry-content"><h3>経緯</h3>
 
 <p>Github.io ってかっこよくね?</p>
 
-<h2>作成</h2>
+<h3>作成</h3>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include&lt;stdio.h&gt;</span>
-</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-</span><span class='line'>      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello,World</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span class='line'>      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nv">$ </span>bundle install —-path vendor/bundle
+</span><span class='line'><span class="nv">$ </span>rake install
+</span><span class='line'><span class="nv">$ </span>rake generate <span class="c">#staticサイト作成  </span>
+</span><span class='line'><span class="nv">$ </span>rake preview <span class="c">#ローカル確認　localhost:4000  </span>
 </span></code></pre></td></tr></table></div></figure>
 
 

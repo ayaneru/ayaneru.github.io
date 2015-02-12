@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Memo | ご注文は何ですか?]]></title>
   <link href="http://ayaneru.github.io/blog/categories/memo/atom.xml" rel="self"/>
   <link href="http://ayaneru.github.io/"/>
-  <updated>2015-02-12T17:47:12+09:00</updated>
+  <updated>2015-02-12T17:52:04+09:00</updated>
   <id>http://ayaneru.github.io/</id>
   <author>
     <name><![CDATA[Mikami Yuki]]></name>
@@ -18,17 +18,17 @@
     <link href="http://ayaneru.github.io/blog/2015/02/12/createpages/"/>
     <updated>2015-02-12T17:40:47+09:00</updated>
     <id>http://ayaneru.github.io/blog/2015/02/12/createpages</id>
-    <content type="html"><![CDATA[<h2>経緯</h2>
+    <content type="html"><![CDATA[<h3>経緯</h3>
 
 <p>Github.io ってかっこよくね?</p>
 
-<h2>作成</h2>
+<h3>作成</h3>
 
-<pre><code class="cpp ">#include&lt;stdio.h&gt;
-int main(void){
-        printf("Hello,World\n");
-        return 0;
-}
+<pre><code class="Bash  ">$ git clone git://github.com/imathis/octopress.git octopress  
+$ bundle install —-path vendor/bundle  
+$ rake install  
+$ rake generate #staticサイト作成  
+$ rake preview #ローカル確認　localhost:4000  
 </code></pre>
 ]]></content>
   </entry>

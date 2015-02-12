@@ -4,7 +4,7 @@
   <title><![CDATA[ご注文は何ですか?]]></title>
   <link href="http://ayaneru.github.io/atom.xml" rel="self"/>
   <link href="http://ayaneru.github.io/"/>
-  <updated>2015-02-12T17:47:12+09:00</updated>
+  <updated>2015-02-12T17:52:04+09:00</updated>
   <id>http://ayaneru.github.io/</id>
   <author>
     <name><![CDATA[Mikami Yuki]]></name>
@@ -18,22 +18,22 @@
     <link href="http://ayaneru.github.io/blog/2015/02/12/createpages/"/>
     <updated>2015-02-12T17:40:47+09:00</updated>
     <id>http://ayaneru.github.io/blog/2015/02/12/createpages</id>
-    <content type="html"><![CDATA[<h2>経緯</h2>
+    <content type="html"><![CDATA[<h3>経緯</h3>
 
 <p>Github.io ってかっこよくね?</p>
 
-<h2>作成</h2>
+<h3>作成</h3>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='cpp'><span class='line'><span class="cp">#include&lt;stdio.h&gt;</span>
-</span><span class='line'><span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">){</span>
-</span><span class='line'>      <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello,World</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-</span><span class='line'>      <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-</span><span class='line'><span class="p">}</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nv">$ </span>bundle install —-path vendor/bundle
+</span><span class='line'><span class="nv">$ </span>rake install
+</span><span class='line'><span class="nv">$ </span>rake generate <span class="c">#staticサイト作成  </span>
+</span><span class='line'><span class="nv">$ </span>rake preview <span class="c">#ローカル確認　localhost:4000  </span>
 </span></code></pre></td></tr></table></div></figure>
 
 
