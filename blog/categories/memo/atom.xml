@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[ご注文は何ですか?]]></title>
-  <link href="http://ayaneru.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Memo | ご注文は何ですか?]]></title>
+  <link href="http://ayaneru.github.io/blog/categories/memo/atom.xml" rel="self"/>
   <link href="http://ayaneru.github.io/"/>
   <updated>2015-02-12T17:42:59+09:00</updated>
   <id>http://ayaneru.github.io/</id>
@@ -21,17 +21,6 @@
     <content type="html"><![CDATA[<h1>経緯</h1>
 
 <p>記事書く予定です.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Test]]></title>
-    <link href="http://ayaneru.github.io/blog/2015/02/12/test/"/>
-    <updated>2015-02-12T17:34:19+09:00</updated>
-    <id>http://ayaneru.github.io/blog/2015/02/12/test</id>
-    <content type="html"><![CDATA[<h2>test</h2>
-
-<p>This contents is test</p>
 ]]></content>
   </entry>
   
