@@ -1,0 +1,10 @@
+---
+layout: post
+title: "test"
+date: 2015-02-12 17:34:19 +0900
+comments: true
+categories: 
+---
+## test  
+This contents is test  
+
