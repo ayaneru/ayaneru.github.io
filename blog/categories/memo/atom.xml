@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Memo | ご注文は何ですか?]]></title>
   <link href="http://ayaneru.github.io/blog/categories/memo/atom.xml" rel="self"/>
   <link href="http://ayaneru.github.io/"/>
-  <updated>2015-02-15T17:48:14+09:00</updated>
+  <updated>2015-02-15T18:07:31+09:00</updated>
   <id>http://ayaneru.github.io/</id>
   <author>
     <name><![CDATA[Mikami Yuki]]></name>
@@ -64,7 +64,7 @@ $ rake install['テーマ名']
 $ rake generate  
 </code></p>
 
-<p><em>[4]参考/引用ページ</em></p>
+<h3>参考/引用ページ</h3>
 
 <hr />
 
