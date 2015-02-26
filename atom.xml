@@ -4,7 +4,7 @@
   <title><![CDATA[ご注文は何ですか?]]></title>
   <link href="http://ayaneru.github.io/atom.xml" rel="self"/>
   <link href="http://ayaneru.github.io/"/>
-  <updated>2015-02-26T20:56:14+09:00</updated>
+  <updated>2015-02-26T20:57:28+09:00</updated>
   <id>http://ayaneru.github.io/</id>
   <author>
     <name><![CDATA[Mikami Yuki]]></name>
@@ -20,7 +20,7 @@
     <id>http://ayaneru.github.io/blog/2015/02/26/20150226</id>
     <content type="html"><![CDATA[<h3>経緯</h3>
 
-<h4><strong>※{color:red}この記事は書き途中です</strong></h4>
+<h4><strong>※この記事は書き途中です</strong></h4>
 
 <p>R言語でプログラム書きたくない.<br/>
 Pythonで1からデータセットは用意したくない.<br/>
