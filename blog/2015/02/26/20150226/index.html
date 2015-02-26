@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>ご注文は何ですか?</title>
+  <title>Memo - ご注文は何ですか?</title>
   <meta name="author" content="Mikami Yuki">
 
   
@@ -13,7 +13,7 @@
 Pythonで1からデータセットは用意したくない.
 R言語は初めからデータセットが用意されている.
 PythonでどうにかR言語のデータセットを用いることは出来ないか.
-検索してみると,同じこと考えている人がいたので参考にした. ">
+検索してみると,同じこと考えている人がいたので参考にした. 実行 Python 2.7. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -22,7 +22,7 @@ PythonでどうにかR言語のデータセットを用いることは出来な�
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://ayaneru.github.io">
+  <link rel="canonical" href="http://ayaneru.github.io/blog/2015/02/26/20150226">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="ご注文は何ですか?" type="application/atom+xml">
@@ -103,15 +103,14 @@ PythonでどうにかR言語のデータセットを用いることは出来な�
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2015/02/26/20150226/">Memo</a></h1>
+      
+        <h1 class="entry-title">Memo</h1>
+      
     
     
       <p class="meta">
@@ -128,7 +127,7 @@ PythonでどうにかR言語のデータセットを用いることは出来な�
   </header>
 
 
-  <div class="entry-content"><h3>経緯</h3>
+<div class="entry-content"><h3>経緯</h3>
 
 <p>R言語でプログラム書きたくない.<br/>
 Pythonで1からデータセットは用意したくない.<br/>
@@ -136,172 +135,91 @@ R言語は初めからデータセットが用意されている.<br/>
 PythonでどうにかR言語のデータセットを用いることは出来ないか.<br/>
 検索してみると,同じこと考えている人がいたので参考にした.</p>
 
+<!--more-->
+
+
+<h3>実行</h3>
+
+<p>Python 2.7.8 + Anaconda 2.1.0 (x86_64)</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$pip</span> install rpy2　#
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="kn">import</span> <span class="nn">pandas.rpy.common</span> <span class="kn">as</span> <span class="nn">prc</span>  <span class="c">#Library</span>
+</span><span class='line'><span class="k">print</span> <span class="n">prc</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="s">&quot;iris&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> <br/>
+これでｵｯｹｰ☆⌒d(´∀｀)ノ</p>
+
+<h3>結論</h3>
+
+<p>これでR言語のデータセットが使えるようになった.<br/>
+けれど<strong>scikit-learn</strong>にデータセットが用意されてるから単純にサンプルを実行したいだけなら無理にRのデータセットを用いる必要性はなかった.</p>
+
+<h4>参考にしたサイト</h4>
+
+<ul>
+<li><a href="http://blog.monophile.net/2013/10/rpython.html," title="Rのサンプルデータをpythonでも">Rのサンプルデータをpythonでも</a></li>
+<li><a href="http://kumamotosan.hatenablog.com/entry/2014/03/02/231742," title="ほんとうに一から始める機械学習">PythonでRの標準データセットを使う。</a></li>
+</ul>
+
 </div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2015/02/26/20150226/">Read on &rarr;</a>
-    </footer>
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2015/02/12/createpages/">OctopressとGitHubでブログ作成</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-02-12T17:40:47+09:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>5:40 pm</span></time>
-        
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h3>経緯</h3>
-
-<p>Github.io ってかっこよくね?</p>
-
-<h3>作成</h3>
-
-<p><em>[1]Octopressを用いてローカル上にブログ設置</em></p>
-
-<hr />
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>git clone git://github.com/imathis/octopress.git octopress
-</span><span class='line'><span class="nv">$ </span>bundle install —-path vendor/bundle
-</span><span class='line'><span class="nv">$ </span>rake install
-</span><span class='line'><span class="nv">$ </span>rake generate <span class="c">#staticサイト作成  </span>
-</span><span class='line'><span class="nv">$ </span>rake preview <span class="c">#ローカル確認　localhost:4000  </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p><em>[2]username+github.io を用いてGitHubPagesを作成</em></p>
-
-<hr />
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>rake setup_github_pages <span class="c">#gitのSSHキー入力  </span>
-</span><span class='line'><span class="nv">$ </span>rake generate <span class="c">#staticサイト作成  </span>
-</span><span class='line'><span class="nv">$ </span>rake deploy <span class="c">#GitHubにcommitされる.</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<p><em>[3]ブログの設定/投稿/OctopressのTheme変更</em></p>
-
-<hr />
-
-<p>[設定]</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>vim _config.yml <span class="c">#各自弄ってください.  </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>
-[投稿]</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>bundle <span class="nb">exec </span>rake new_post<span class="o">[</span><span class="s1">&#39;記事のナンバー(英語)&#39;</span><span class="o">]</span>  <span class="c"># 記事のタイトルは記事書くときに日本語タイトルに変更可  </span>
-</span><span class='line'><span class="nv">$ </span>rake gen_deploy <span class="c">#rake generate , rake deploy  </span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>
-[Theme変更]</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$ </span>git clone themeの保存されているssh .themes/テーマ名
-</span><span class='line'><span class="nv">$ </span>rake install<span class="o">[</span><span class="s1">&#39;テーマ名&#39;</span><span class="o">]</span>
-</span><span class='line'><span class="nv">$ </span>rake generate
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p></p>
-
-<h3>参考/引用ページ</h3>
-
-<hr />
-
-<p>・<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes," title="3rd Party Octopress Themes">3rd Party Octopress Themes</a><br/>
-・<a href="http://qiita.com/syui/items/07365ed24eef63602233," title="GitHub Pages + Octopress カスタマイズ">GitHub Pages + Octopress カスタマイズ</a><br/>
-・<a href="http://www.slideshare.net/yizawa/octopress," title="Octopress簡単スタートガイドWorking at 株式会社クルウィット">Octopress簡単スタートガイド</a><br/>
-・<a href="http://rcmdnk.github.io/blog/2013/03/07/setup-octopress/," title="GitHub pages + Octopressの導入">GitHub pages + Octopressの導入</a></p>
-</div>
-  
   
 
 
-    </article>
+
+  <span class="byline author vcard">Authored by <span class="fn">
   
+    Mikami Yuki
   
-    <article>
+  </span></span>
+
+
       
-  <header>
+
+
+
+
+<time class='entry-date' datetime='2015-02-26T19:30:07+09:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>26</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>7:30 pm</span></time>
+      
+      
+
+
+    </p>
     
-      <h1 class="entry-title"><a href="/blog/2015/02/12/test/">Test</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2015-02-12T17:34:19+09:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>12</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>5:34 pm</span></time>
-        
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><h2>test</h2>
-
-<p>This contents is test</p>
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://ayaneru.github.io/blog/2015/02/26/20150226/" data-via="ayaneruuu" data-counturl="http://ayaneru.github.io/blog/2015/02/26/20150226/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2015/02/12/createpages/" title="Previous Post: OctopressとGitHubでブログ作成">&laquo; OctopressとGitHubでブログ作成</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
 </div>
-<aside class="sidebar">
-  
-    
-  
-</aside>
 
     </div>
   </div>

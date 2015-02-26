@@ -4,7 +4,7 @@
   <title><![CDATA[ご注文は何ですか?]]></title>
   <link href="http://ayaneru.github.io/atom.xml" rel="self"/>
   <link href="http://ayaneru.github.io/"/>
-  <updated>2015-02-24T21:22:26+09:00</updated>
+  <updated>2015-02-26T20:50:34+09:00</updated>
   <id>http://ayaneru.github.io/</id>
   <author>
     <name><![CDATA[Mikami Yuki]]></name>
@@ -12,6 +12,58 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Memo]]></title>
+    <link href="http://ayaneru.github.io/blog/2015/02/26/20150226/"/>
+    <updated>2015-02-26T19:30:07+09:00</updated>
+    <id>http://ayaneru.github.io/blog/2015/02/26/20150226</id>
+    <content type="html"><![CDATA[<h3>経緯</h3>
+
+<p>R言語でプログラム書きたくない.<br/>
+Pythonで1からデータセットは用意したくない.<br/>
+R言語は初めからデータセットが用意されている.<br/>
+PythonでどうにかR言語のデータセットを用いることは出来ないか.<br/>
+検索してみると,同じこと考えている人がいたので参考にした.</p>
+
+<!--more-->
+
+
+<h3>実行</h3>
+
+<p>Python 2.7.8 + Anaconda 2.1.0 (x86_64)</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='Bash'><span class='line'><span class="nv">$pip</span> install rpy2　#
+</span></code></pre></td></tr></table></div></figure>
+
+
+
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='Python'><span class='line'><span class="kn">import</span> <span class="nn">pandas.rpy.common</span> <span class="kn">as</span> <span class="nn">prc</span>  <span class="c">#Library</span>
+</span><span class='line'><span class="k">print</span> <span class="n">prc</span><span class="o">.</span><span class="n">load_data</span><span class="p">(</span><span class="s">&quot;iris&quot;</span><span class="p">)</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> <br/>
+これでｵｯｹｰ☆⌒d(´∀｀)ノ</p>
+
+<h3>結論</h3>
+
+<p>これでR言語のデータセットが使えるようになった.<br/>
+けれど<strong>scikit-learn</strong>にデータセットが用意されてるから単純にサンプルを実行したいだけなら無理にRのデータセットを用いる必要性はなかった.</p>
+
+<h4>参考にしたサイト</h4>
+
+<ul>
+<li><a href="http://blog.monophile.net/2013/10/rpython.html," title="Rのサンプルデータをpythonでも">Rのサンプルデータをpythonでも</a></li>
+<li><a href="http://kumamotosan.hatenablog.com/entry/2014/03/02/231742," title="ほんとうに一から始める機械学習">PythonでRの標準データセットを使う。</a></li>
+</ul>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[OctopressとGitHubでブログ作成]]></title>
